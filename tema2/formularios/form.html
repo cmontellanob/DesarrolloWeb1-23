@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="../hipervinculos.html" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" > <br>
+        <div>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos">
+        </div>
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono">
+        </div>
+        <div>
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha">
+        </div>  
+        <div>
+            <label for="color">Color Favorito</label>
+            <input type="color" name="color">
+        </div>      
+        <div>
+            <label for="semana">semana</label>
+            <input type="week" name="semana">
+        </div>
+        <div>
+            <label for="sexo">sexo</label>
+            <input type="radio" name="sexo" value="hombre">Hombre
+            <input type="radio" name="sexo" value="mujer">Mujer
+        </div>
+        <div>
+            <label for="estadocivil">estadocivil</label>
+            <input type="radio" name="estadocivil" value="S">Soltero
+            <input type="radio" name="estadocivil" value="C">Casado
+            <input type="radio" name="estadocivil" value="D">Divorciado
+            <input type="radio" name="estadocivil" value="V">Viudo
+        </div>
+        <div>
+            <label for="deporte">Deportes de preferencia</label>
+            <input type="checkbox" name="futbol" value="futbol">Futbol
+            <input type="checkbox" name="baloncesto" value="baloncesto">Baloncesto
+            <input type="checkbox" name="tenis" value="tenis">Tenis
+            <input type="checkbox" name="natacion" value="natacion">Natación
+
+        </div>
+        <div>
+            <label for="carrera">Carrera</label>
+            <select name="carrera" id="carrera">
+                <option value="IS">Ingeniería en Sistemas</option>
+                <option value="II">Ingeniería Industrial</option>
+                <option value="IM">Ingeniería Mecánica</option>
+                <option value="IC">Ingeniería Civil</option>
+            </select>    
+        </div>
+        <div>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios"  cols="30" rows="10"></textarea>
+
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </div>
+
+
+
+    </form>
+</body>
+
+</html>

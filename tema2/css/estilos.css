@@ -1,0 +1,17 @@
+#principal
+{
+    width: 150px;
+    height: 150px;
+    background-color: #000;
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.justificado
+{
+    text-align: justify;
+    text-justify: inter-word;
+}
