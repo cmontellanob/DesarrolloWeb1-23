@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  background-color: #e414be;
+  /* flex-direction:row;
+  flex-wrap: wrap-reverse; */
+  flex-flow: row wrap-reverse;
+    justify-content: space-evenly
+
+}
+.item {
+  width: 30px;
+    height: 30px;  
+ 
+  background-color: orange;
+  border: 1px solid #000000;
+}
+
+.contenedor {
+    display: flex;
+    background-color: #e414be;
+    flex-direction:row;
+    flex-wrap: wrap;
+    
+    justify-content: space-evenly;
+    align-items:end;
+    align-content:center;
+  
+  }
+.azul {
+    background-color: blue;
+    border: 1px solid #000000;
+}

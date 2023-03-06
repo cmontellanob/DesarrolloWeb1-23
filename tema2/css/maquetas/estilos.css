@@ -1,0 +1,38 @@
+body {
+    background-color: #335cce;
+    
+    
+    
+}
+#contenedor
+{
+    width:60%;
+    background-color: aqua;
+    border: 1px solid #000000;
+    margin:0px auto;
+}
+ul.menu
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 20%;
+    margin:0px auto;
+}
+
+#contenedor li.par
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+#contenedor li.imparpar
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #cacd20;
+}

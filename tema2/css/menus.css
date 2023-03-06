@@ -1,0 +1,27 @@
+nav.horizontal
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+}
+nav.horizontal li
+{
+    padding: 0 10px;
+    border-right: 1px solid #ccc;
+    flex-basis: 10;
+    
+}
+nav.horizontal li a:link,
+nav.horizontal li a:visited {
+    padding: .3em;
+    text-decoration: none;
+    color: #333;
+    background: #F4F4F4;
+    border: 1px solid #7C7C7C;
+    
+}
+nav.horizontal li a:hover{
+    background-color: #FC0;
+}
