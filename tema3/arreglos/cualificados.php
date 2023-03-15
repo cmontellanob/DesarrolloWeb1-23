@@ -5,7 +5,7 @@ $alumno["edad"] = 20;
 $alumno["carrera"] = "IS";
 $alumno["materias"] = array("matematicas", "programacion", "bases de datos");
 
-echo "<h2> ciclo for</h2>";
+echo "<h2> ciclo for each</h2>";
 foreach ($alumno as $indice => $valor) {
     if ($indice != "materias") {
         echo "<div>$indice : $valor</div>";
