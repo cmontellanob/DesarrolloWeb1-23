@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="usaroperaciones.php" method="get">
+        <div>
+            <label for="a">introduzca el valor de a:</label>
+            <input type="number" name="a" >
+        </div>
+        <div>
+            <label for="b">introduzca el valor de b:</label>
+            <input type="number" name="b" >
+        </div>
+        <div>
+            <select name="operacion" >
+                <option value="suma" >Sumar </option>
+                <option value="resta" selected="selected">Restar </option>
+            </select>
+        </div>
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+</html>

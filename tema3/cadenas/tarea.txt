@@ -1,0 +1,13 @@
+/realizar  un programa en php que introducida una cadena
+imprimima las palabras de la oracion con la inicial en mayuscula 
+y el resto de la pabra en minuscula centrada
+Ej
+
+Programar en la web es facil
+
+                        Programar
+                            en
+                            la 
+                           web 
+                            es 
+                           facil            
