@@ -7,7 +7,6 @@ class Rectangulo implements IFigura{
     {
         $this->base=$base;
         $this->altura=$altura;
-        
     }
 
     function calcularArea(){

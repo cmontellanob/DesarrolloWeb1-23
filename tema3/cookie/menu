@@ -1,0 +1,24 @@
+// realizar un programa en php que defina la clase operaciones 
+con las propiedades 
+a y b
+con los metodos 
+constructor que inicializa los valores de a y b
+suma() que calcula la suma de a+b
+resta () que calcula la resta de a-b
+multiplicacion() que calcula la multiplicacion de a+b
+division () que calcula la division de a/b
+
+luego crear menu_operaciones.html con las opciones 
+1. definir los valores
+2. sumar
+3. restar 
+4. multiplicar
+5. dividir
+
+al seleccionar 1, debe llamar a formulario_a_b.html  que solicita el valor de a y b y llama a menu.html
+al seleccionar 2 calcula la suma siempre y cuando existan valores para a y b
+al seleccionar 3 calcula la resta siempre y cuando existan valores para a y b
+al seleccionar 4 calcula la multiplicacion siempre y cuando existan valores para a y b
+al seleccionar 5 calcula la division siempre y cuando existan valores para a y b
+
+
