@@ -1,4 +1,4 @@
-// realizar un programa en php que defina la clase operaciones 
+realizar un programa en php que defina la clase operaciones 
 con las propiedades 
 a y b
 con los metodos 
@@ -21,4 +21,5 @@ al seleccionar 3 calcula la resta siempre y cuando existan valores para a y b
 al seleccionar 4 calcula la multiplicacion siempre y cuando existan valores para a y b
 al seleccionar 5 calcula la division siempre y cuando existan valores para a y b
 
-
+a) resolver utilizando cookies 
+b) resolver utilizando sessiones
