@@ -6,3 +6,4 @@
 //   $o = new operaciones($a,$b);
 //   setcookie('o',$o,time()+3600);
 ?>
+<meta http-equiv="refresh" content="4;url=menu.html">
