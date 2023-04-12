@@ -12,7 +12,11 @@
     <form action="autenticar.php" method="POST">
         <div>
             <label for="correo">Correo:</label>
-            <input type="email" name="correo">
+            <input type="email" name="correo"
+             <?php if (isset($_COOKIE['correo'])) { ?>
+                value="<?php echo $_COOKIE['correo'];
+                } ?>"
+            >
         </div>
         <div>
             <label for="contrasena">Contraseña:</label>

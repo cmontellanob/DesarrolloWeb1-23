@@ -1,4 +1,4 @@
 <?php session_start();
 session_destroy();
 ?>
-<meta http-equiv="refresh" content="3; url=login.html" />
+<meta http-equiv="refresh" content="3; url=login.php" />
