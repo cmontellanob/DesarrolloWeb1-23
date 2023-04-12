@@ -1,4 +1,6 @@
 <?php 
+include('verificar.php');
+include('permiso.php');
 $nombres=$_POST['nombres'];
 $apellidos=$_POST['apellidos'];
 $celular=$_POST['celular'];
