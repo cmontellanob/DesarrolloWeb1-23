@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-04-2023 a las 23:30:41
+-- Tiempo de generación: 20-04-2023 a las 03:03:58
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -29,18 +29,46 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `personas` (
   `id` int(11) NOT NULL,
+  `fotografia` varchar(35) NOT NULL,
   `nombres` varchar(50) NOT NULL,
   `apellidos` varchar(30) NOT NULL,
-  `celular` int(11) NOT NULL
+  `celular` int(11) NOT NULL,
+  `idprofesion` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `personas`
 --
 
-INSERT INTO `personas` (`id`, `nombres`, `apellidos`, `celular`) VALUES
-(1, 'Juan ', 'Perez Gomez', 68771354),
-(2, 'Lautaro', 'Garcia Gomez', 711544328);
+INSERT INTO `personas` (`id`, `fotografia`, `nombres`, `apellidos`, `celular`, `idprofesion`) VALUES
+(1, '644064d4aafff.jpg', 'Juan ', 'Perez Gomez', 68771354, 3),
+(2, '', 'Lautaro', 'Garcia Gomez', 711544328, 2),
+(5, '', 'Est natus sint anim', 'Dicta laboriosam ad', 33, 0),
+(6, '', 'Ad nostrum commodi i', 'At non excepteur ips', 21, 0),
+(7, '', 'Veniam soluta et se', 'Ut magni ullamco id', 47, 0),
+(8, '', 'Sequi exercitation v', 'Aut laborum magna ne', 21, 4),
+(9, '644062ce7d327.png', 'Et mollit accusantiu', 'Cillum nulla odio qu', 38, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `profesiones`
+--
+
+CREATE TABLE `profesiones` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `profesiones`
+--
+
+INSERT INTO `profesiones` (`id`, `nombre`) VALUES
+(1, 'Ingeniero de Sistemas'),
+(2, 'Ingeniero en Ciencias de la Computación'),
+(3, 'Abogado'),
+(4, 'Medico');
 
 -- --------------------------------------------------------
 
@@ -75,6 +103,12 @@ ALTER TABLE `personas`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `profesiones`
+--
+ALTER TABLE `profesiones`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
@@ -88,6 +122,12 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `personas`
 --
 ALTER TABLE `personas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT de la tabla `profesiones`
+--
+ALTER TABLE `profesiones`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
