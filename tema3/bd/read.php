@@ -65,6 +65,7 @@ if ($resultado->num_rows > 0) {
 if ($_SESSION['nivel'] == 1) {
 ?>
     <a href="form_create.php">Insertar</a>
+    <a href="estadistica.html">Estadistica Profesiones</a>
 <?php
 }
 $con->close();

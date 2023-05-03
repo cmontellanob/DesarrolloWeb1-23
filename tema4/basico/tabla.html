@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .cuadrado {
+      width: 50px;
+      height: 50px;
+      border: 1px solid black;
+      text-align: center;
+    }
+
+    .cuadrado2 {
+      width: 50px;
+      height: 50px;
+      border: 1px solid black;
+      background-color: aqua;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let fila = prompt("ingrese numero de filas");
+    let columna = prompt("ingrese numero de columnas");
+
+    let nombre = prompt("ingrese el nombre");
+    let n = 0;
+    document.write(`<table style="border: 1px solid black">`);
+    for (i = 0; i < parseInt(fila); i++) {
+      document.write(`<tr style="border: 1px solid black">`)
+      for (j = 0; j < parseInt(columna); j++) {
+        if ((i + j) % 2 == 0) {
+          if (n <= nombre.length) {
+            letra = nombre.charAt(n);
+            n++;
+            document.write(`<td class="cuadrado">
+                            ${letra} </td>`)
+
+          } else {
+            document.write(`<td class="cuadrado">
+                           &nbsp; </td>`)
+          }
+
+        } else {
+          document.write(`<td class="cuadrado2">
+                            &nbsp; </td>`)
+        }
+
+      }
+    }
+    document.write(`</table>`);
+  </script>
+</body>
+
+</html>

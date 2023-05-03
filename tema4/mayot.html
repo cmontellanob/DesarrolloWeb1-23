@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .verde{
+            background-color: green;
+            border: 1px solid black;
+            width: 70px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let a=prompt('introducir a');
+        let b=prompt('introducir b');
+        let c=prompt('introducir c');
+        let m=0;
+        if(a>b&&a>c){
+            m=a;
+        }
+        if(b>a&&b>c){
+            m=b;
+        }
+        if(c>a&&c>b){
+            m=c;
+        }
+        document.write(`<div class="verde">El mayor es:${m}</div>`)
+    </script>
+</body>
+</html>
