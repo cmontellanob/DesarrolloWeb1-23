@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let alumno = {
+            nombre: "Rircardo", apellidos: "Lopez", cu: "111-500",edad:20,
+            materias: [{ sigla: "sis-256", docente: "carlos montellano" },
+            { sigla: "sis-420", docente: "carlos pacheco" }
+            ]
+        }
+        
+        document.writeln(alumno.nombre + " " + alumno.apellidos + "<br>");
+        alumnoJSON=JSON.stringify(alumno);
+        alumnoObjeto=JSON.parse(alumnoJSON)
+        document.writeln(alumnoJSON);
+        console.log(alumnoObjeto);
+    </script>
+
+
+</body>
+
+</html>

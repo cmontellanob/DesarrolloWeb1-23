@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    a : <input type="number" id="a">
+    b : <input type="number" id="b">
+    operacion
+    <select id="operacion" onchange="cambiarOperacion()">
+        <option value="suma">suma</option>
+        <option value="resta">resta</option>
+        <option value="multiplicacion">multiplicacion</option>
+        <option value="division">division</option>
+    </select>
+    <button id="boton">calcular</button>
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        document.getElementById('boton').onclick = sumar;
+        function cambiarOperacion() {
+            operacion = document.getElementById('operacion').value;
+            console.log(operacion);
+            switch (operacion) {
+                case 'suma':
+                    document.getElementById('boton').onclick = sumar;
+                    break;
+                case 'resta':
+                    document.getElementById('boton').onclick = restar;
+                    break;
+                case 'multiplicacion':
+                    document.getElementById('boton').onclick = multiplicar;
+                    break;
+                case 'division':
+                    document.getElementById('boton').onclick = dividir;
+                    break;
+
+            }
+
+        }
+        function sumar() {
+            a = document.getElementById('a').value;
+            b = document.getElementById('b').value;
+            document.getElementById('resultado').innerHTML = a + b;
+        }
+        function restar() {
+            a = document.getElementById('a').value;
+            b = document.getElementById('b').value;
+            document.getElementById('resultado').innerHTML = a - b;
+        }
+        function multiplicar() {
+            a = document.getElementById('a').value;
+            b = document.getElementById('b').value;
+            document.getElementById('resultado').value = a * b;
+        }
+        function dividir() {
+            a = document.getElementById('a').value;
+            b = document.getElementById('b').value;
+            document.getElementById('resultado').value = a / b;
+        }
+    </script>
+
+</body>
+
+</html>

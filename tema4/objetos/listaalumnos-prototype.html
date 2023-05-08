@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+   function listaalumnos(materia,alumnos)
+   {
+    this.materia=materia;
+    this.alumnos=alumnos;
+
+   } 
+    listaalumnos.prototype.mostrar=function() 
+    {
+         document.writeln("La materia es "+this.materia+"<br>");
+         document.write("ALumnos <br>");
+            for(let i=0;i<this.alumnos.length;i++)
+            {
+                document.writeln(this.alumnos[i].nombre+" ");
+                document.writeln(this.alumnos[i].apellido+"<br>");
+            }
+    }
+    let lista1=new listaalumnos("Matematicas",[{nombre:"Juan",apellido:"Perez"},{nombre:"Pedro",apellido:"Ramirez"}]);
+    lista1.mostrar();
+</script>    
+</body>
+</html>

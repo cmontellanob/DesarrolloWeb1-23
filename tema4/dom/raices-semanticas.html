@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input type="number" id="a">X2
+        <input type="number" id="b">X
+        <input type="number" id="c"> =0
+    </div>
+    <div>
+        <button id="boton" >Calcular</button>
+    </div>
+    <div>
+        <p>Resultado</p>
+        <div>
+            x1= <span id="x1"></span>
+        </div>
+        <div>
+            x2= <span id="x2"></span>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('boton').onclick=calcular;
+        function calcular() {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let c = document.getElementById("c").value;
+
+            let d = b * b - 4 * a * c;
+            var etiqueta;
+            if (d < 0) {
+                etiqueta = "i";
+                d = d * -1;
+            }
+            else {
+                etiqueta = "";
+            }
+            x1 = (-b + Math.sqrt(d)) / (2 * a);
+            x2 = (-b - Math.sqrt(d)) / (2 * a);
+            document.getElementById('x1').innerHTML = x1 + etiqueta;
+            document.getElementById('x2').innerHTML = x2 + etiqueta;
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
