@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculadora de color de fondo y primer plano</title>
+  </head>
+  <body>
+    <h1>Calculadora de color de fondo y primer plano</h1>
+    <p>Introduce 3 números y presiona el botón "Calcular" para ver el número mayor resaltado en verde y rojo:</p>
+    <input type="number" id="numero1">
+    <input type="number" id="numero2">
+    <input type="number" id="numero3">
+    <button onclick="calcular()">Calcular</button>
+    <script>
+      function calcular() {
+        // Obtener los valores de los inputs
+        var numero1 = parseFloat(document.getElementById("numero1").value);
+        var numero2 = parseFloat(document.getElementById("numero2").value);
+        var numero3 = parseFloat(document.getElementById("numero3").value);
+
+        // Encontrar el número mayor
+        var mayor = Math.max(numero1, numero2, numero3);
+
+        // Cambiar el color de fondo y primer plano del número mayor
+        if (mayor === numero1) {
+            document.getElementById("numero1").style.backgroundColor = "green";
+            document.getElementById("numero1").style.color = "red";
+        } else if (mayor === numero2) {
+            document.getElementById("numero2").style.backgroundColor = "green";
+            document.getElementById("numero2").style.color = "red";
+        } else if (mayor === numero3) {
+            document.getElementById("numero3").style.backgroundColor = "green";
+            document.getElementById("numero3").style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

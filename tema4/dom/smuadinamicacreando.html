@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Cantidad <input type="number" name="n" id="n">
+    <button onclick="generar()">Calcular</button>
+    <div id="valores">
+    </div>
+    <div id="resultado">
+    </div>
+    <script>
+        function generar() {
+            let n = document.getElementById("n").value;
+            valores = document.getElementById("valores");
+
+            for (i = 0; i < n; i++) {
+
+                const cuadro = document.createElement("input");
+                cuadro.type = "number";
+                cuadro.name = "valores";
+                cuadro.id = "valores";
+                valores.appendChild(cuadro);
+                const br = document.createElement("br");
+                valores.appendChild(br);
+
+            }
+            const boton = document.createElement("button");
+            boton.type = "button";
+
+            boton.innerText = "Sumar";
+            valores.appendChild(boton);
+            boton.addEventListener('click', function () {
+                vector = document.getElementsByName('valores');
+                let suma = 0;
+                for (i = 0; i < vector.length; i++) {
+                    suma += vector[i].valueAsNumber;
+                }
+                document.getElementById("resultado").innerHTML = "La suma es: " + suma;
+
+            })
+
+        }
+    </script>
+</body>
+
+</html>
