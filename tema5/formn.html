@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="javascript:calcularFibonaci()" method="GET">
+        <div>
+        <label for="n">Introduzca n</label>
+        <input type="number" name="n" id="n">
+    </div>
+      <input type="submit" value="calcular">
+
+    </form>
+    <div id="contenido" style ="background-color: green;border:1px solid">
+
+    </div>
+<script>
+    function calcularFibonaci() {
+        var contenedor;
+        contenedor = document.getElementById('contenido');
+        var ajax = new XMLHttpRequest() //crea el objetov ajax 
+        ajax.open("get", "fibonaci.php?n="+document.getElementById('n').value, true);
+        ajax.onreadystatechange = function () {
+            if (ajax.readyState == 4) {
+                console.log(ajax)
+                contenedor.innerHTML = ajax.responseText
+            }
+        }
+        ajax.setRequestHeader("Content-Type", "text/html; charset=utf-8");
+        ajax.send();
+    }
+</script>
+
+    
+</body>
+</html>
