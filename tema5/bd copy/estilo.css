@@ -1,0 +1,19 @@
+#cabeza {
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+#contenido {
+    display: flex;
+
+}
+.menu {
+    background-color: burlywood;
+    width: 20%;
+}
+
+#datos {
+    background-color: beige;
+    width: 80%;
+    padding: 10px
+}
